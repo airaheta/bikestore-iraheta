@@ -1,12 +1,14 @@
 
 import React from "react";
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-      Sammy's Bikes
-      </a>
+      <h3>
+      Sammy's Bikes  
+      </h3>
+       
       <button
         className="navbar-toggler"
         type="button"
@@ -38,8 +40,8 @@ const NavBar = () => {
           </li>
           
         </ul>
+        <CartWidget />
       </div>
-      
     </nav>
   );
 };
