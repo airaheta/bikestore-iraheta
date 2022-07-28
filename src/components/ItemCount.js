@@ -6,7 +6,7 @@ export default function ItemCount({stock, initial}) {
   //increase counter
   const increase = () => {
     if (counter < stock) {    
-    setCounter(counter =>  parseInt (counter) + 1);
+    setCounter(parseInt (counter) + 1);
     }
 };
  
@@ -14,7 +14,7 @@ export default function ItemCount({stock, initial}) {
   const decrease = () => {
     
     if (counter > initial) {    
-        setCounter(counter => parseInt (counter)  - 1);
+        setCounter(parseInt (counter)  - 1);
         }
     
     

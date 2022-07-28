@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <NavBar/>
         <ItemCount stock = "5" initial = "1" />
-        <ItemListContainer lista = 'Valor_lista'/>
+        <ItemListContainer lista = 'Bienvenido!'/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

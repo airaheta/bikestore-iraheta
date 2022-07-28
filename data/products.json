@@ -1,0 +1,22 @@
+[
+
+    {
+        "ID" : "AZM001",
+        "name": "Azimo MTB",
+        "trowel": "29",
+        "type":"Mountain",
+        "price": "100 USD",
+        "description":"Azimo mountain bike 2022"
+        
+        },
+        {
+            "ID" : "AZM002",
+            "name": "Azimo CTB",
+            "trowel": "27",
+            "type":"City",
+            "price": "50 USD",
+            "description":"Azimo city bike 2022"
+            
+            }
+
+]
