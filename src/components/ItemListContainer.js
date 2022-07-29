@@ -4,7 +4,7 @@ import ItemList from './ItemList';
 
 //import { FontAwesome } from '@fortawesome/react-fontawesome';
 
-const ItemListContainer = ({lista}) => {
+const ItemListContainer = ({greeting}) => {
 
   const [items, setItems] = useState([])
 
@@ -12,9 +12,10 @@ const ItemListContainer = ({lista}) => {
 
     fetch('https://jsonplaceholder.typicode.com/users')
     .then (response => response.json())
-    .then (data => 
+    .then (data => {
+      console.log(data)
       setItems(data)
-      )
+    })
   },[])
 
 
@@ -22,8 +23,9 @@ const ItemListContainer = ({lista}) => {
   
 
   <div>
-  <h3>contenido prop: {lista}</h3>
-  <ItemList Items = {items}/>
+  <h3> {greeting}</h3>
+  <ItemList items = {items}/>
+
 </div>
 );
 };
